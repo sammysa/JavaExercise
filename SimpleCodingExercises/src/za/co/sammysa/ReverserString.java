@@ -10,7 +10,7 @@ public class ReverserString {
         StringBuilder reversedString = new StringBuilder(); // to be used for our String Builder
         // 1. Check if the input string is empty else return
         if(inputString == null || inputString.isEmpty()){
-            return "Inout string is empty or null.";
+            return "Input string is empty or null.";
         }
 
         // If input string is valid the iterate through string per character
