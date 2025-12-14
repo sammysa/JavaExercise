@@ -1,0 +1,86 @@
+In this section, we are going to cover SOLID Principles in the best practices we can apply them - using MATHS as the basis of our learning.
+
+Firstly, what is the SOLID Principles?
+SOLID refers to the following:
+++++++++++++++++++++++++++++++++++++++++++++
+S: Single Responsibility Principle
+
+A class should have only one reason to change. Each class should be filled with its own purpose and not be filled with
+excessive functionality.
+
+Everyday example
+Think of a restaurant:
+The chef cooks food
+The waiter serves customers
+The cashier handles payments
+
+If the chef also started taking payments and serving tables, things would quickly fall apart.
+
+Why this matters
+    - Easier to maintain
+    - Changes in one area don’t break others
+    - Cleaner unit tests
+
+++++++++++++++++++++++++++++++++++++++++++++
+O: Open/Closed Principle
+
+Software entities should be open for extension, but closed for modification.
+
+Everyday example
+A power socket:
+    - You can plug in different devices
+    - You don’t rewire the wall every time you buy a new appliance
+
+Why this matters
+    - Reduces risk of breaking existing code
+    - Encourages clean extension
+    - Ideal for growing systems (e.g. adding EFT, Apple Pay, etc. to a payment option)
+++++++++++++++++++++++++++++++++++++++++++++
+L: Liskov Substitution Principle
+
+Subclasses should be replaceable for their base classes without breaking the application.
+
+Everyday example
+
+If you rent a car, you expect:
+    - It can accelerate
+    - It can brake
+
+If the rental company gives you a “car” that can’t drive, it breaks expectations.
+
+Why this matters
+- Prevents unexpected runtime errors
+- Keeps inheritance logical
+- Makes polymorphism safe
+
+++++++++++++++++++++++++++++++++++++++++++++
+I: Interface Segregation Principle
+
+Clients should not be forced to depend on methods they do not use.
+
+Everyday example
+A remote control:
+    - TV remote shouldn’t have buttons for air-conditioning
+    - Each device gets only what it needs
+
+Why this matters
+    - Cleaner interfaces
+    - Less dummy or empty implementations
+    - More flexible design
+
+++++++++++++++++++++++++++++++++++++++++++++
+D: Dependency Inversion Principle
+
+High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+Everyday example
+A lamp:
+    - It plugs into a socket
+    - It doesn’t care if electricity comes from coal, solar, or a generator
+
+Why this matters
+    - Easier to replace components
+    - Better for testing (mocking)
+    - Essential for Spring dependency injection
+
+++++++++++++++++++++++++++++++++++++++++++++
